@@ -1,0 +1,46 @@
+/* * {border: 1px solid lightblue} */
+.container {
+    box-sizing: border-box;
+    width: 400px;
+    padding: 50px;
+    margin: 0 auto;
+}
+.header {
+    text-align: center;
+}
+.signIn {
+    margin-top: 15%;
+}
+.signIn-input {
+    width: 100%;
+    line-height: 50px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding-left: 10px;
+    border: 1px solid #c8c8c8;
+    border-bottom: none;
+}
+.signIn-first {
+    border-radius: 5px 5px 0 0;
+}
+.signIn-last {
+    border: 1px solid #c8c8c8;
+    border-radius: 0 0 5px 5px;    
+}
+.signIn-input::placeholder {
+    color: #c8c8c8;
+}
+.signIn-submit {
+    background: #42c02e;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    padding: 9px 18px;
+    border-radius: 25px;
+    /* outline: none; */
+}
+.signIn-submit:focus {
+    outline: none;
+}

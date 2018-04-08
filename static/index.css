@@ -3,6 +3,9 @@
 .header {
     border-bottom: 1px solid #f0f0f0;
 }
+.header-link {
+    margin: 0 10px;
+}
 .header-logo {
     width: 100px;
     vertical-align: top;
@@ -12,13 +15,31 @@
     font-size: 15px;
     color: #fff;
     background: #ec6149;
-    padding: 6px 12px;
+    padding: 10px 18px;
     border-radius: 20px;
 }
 .header-write:hover {
     color: #fff;
     text-decoration: none;
 }
+.header-signin {
+    color: #969696;
+}
+.header-signin:hover {
+    color: #969696;
+    text-decoration: none;
+}
+.header-signup {
+    color: #ec6149;
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: 1px solid #ec6149;
+}
+.header-signup:hover {
+    color: #ec6149;
+    text-decoration: none;
+}
+
 
 .content-title {
     margin: 20px 0;
