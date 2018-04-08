@@ -24,7 +24,7 @@ router.use('/:id', (req, res)=>{                          // 读文章
             const title =  data[0].title
             const content = converter.makeHtml(data[0].content)
 
-            ejs.renderFile(__dirname + '/../read.ejs', {title: title, content: content}, (err, data)=>{
+            ejs.renderFile(__dirname + '/../template/read.ejs', {title: title, content: content}, (err, data)=>{
                 if(err) {
                     res.send('渲染文章失败')
                 }

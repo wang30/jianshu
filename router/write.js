@@ -23,7 +23,7 @@ router.use('/:id', (req, res)=>{                           // 写文章
                 const content = data[0].content
                 const id = data[0].id
     
-                ejs.renderFile(__dirname + '/../write.ejs', {title: title, content: content, id: id}, (err, data)=>{
+                ejs.renderFile(__dirname + '/../template/write.ejs', {title: title, content: content, id: id}, (err, data)=>{
                     if(err) {
                         res.send('error')
                     }

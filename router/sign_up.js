@@ -4,7 +4,7 @@ const ejs = require('ejs')
 const router = express.Router()
 
 router.use('/', (req, res) => {                  // 注册
-    ejs.renderFile(__dirname + '/../sign_up.ejs', (err, data)=>{
+    ejs.renderFile(__dirname + '/../template/sign_up.ejs', (err, data)=>{
         if(err) {
             res.send(err)
         }
