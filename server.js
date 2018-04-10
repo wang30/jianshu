@@ -1,14 +1,22 @@
 const static = require('express-static')
 const express = require('express')
 const bodyParser = require('body-parser')
+const cookieParser = require('cookie-parser')
+const cookieSession = require('cookie-session')
 
 const server = express()
 
-server.use(bodyParser.urlencoded({}))
+server.use(bodyParser.urlencoded({extended: false}))
 
-
+server.use(cookieParser({}))
+// server.use(cookieSession({
+//     name: 'session_id',
+//     keys: ['afdniewhns', 'jsksmnxnshwy', 'wjsnbsvdf'],
+//     maxAge: 20*60*1000
+// }))
 
 server.use('/api/save', require('./api/save.js'))
+server.use('/api/sign_up', require('./api/sign_up.js'))
 
 server.use('/p', require('./router/read.js'))
 

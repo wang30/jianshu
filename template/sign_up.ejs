@@ -10,10 +10,13 @@
 <body>
     <div class="container">
         <h3 class="header">注册</h3>
-        <form class="signIn" action="1.php" method="post">
-            <input class="signIn-input signIn-first" name="name" required type="text" placeholder="你的昵称"><br>
-            <input class="signIn-input" name="email" type="email" required placeholder="邮箱"><br>
-            <input class="signIn-input signIn-last" name="password" required type="password" placeholder="设置密码"><br>
+        <form class="signIn" action="/api/sign_up" method="post">
+            <input class="signIn-input signIn-first" name="name" 
+                   required minlength="2" maxlength="20" type="text" placeholder="你的昵称"><br>
+            <input class="signIn-input" name="email" type="email" 
+                   required placeholder="邮箱"><br>
+            <input class="signIn-input signIn-last" name="password"
+                   required minlength="4" maxlength="20" type="password" placeholder="设置密码"><br>
             <input class="signIn-submit" type="submit" value="注册">
         </form>        
     </div>
