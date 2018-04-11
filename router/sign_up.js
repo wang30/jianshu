@@ -10,7 +10,6 @@ router.use('/', (req, res) => {                  // 注册
         }
         else {
             // res.cookie('liu', 'liu', {path: '/sign_in', maxAge: 30*24*3600*1000})
-            req.secret = 'jfnbcxgshenstywm'
 
             res.cookie('user', 'danny', {signed: true})
             

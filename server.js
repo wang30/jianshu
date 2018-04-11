@@ -8,7 +8,7 @@ const server = express()
 
 server.use(bodyParser.urlencoded({extended: false}))
 
-server.use(cookieParser({}))
+server.use(cookieParser('jfnbcxgshenstywm'))
 // server.use(cookieSession({
 //     name: 'session_id',
 //     keys: ['afdniewhns', 'jsksmnxnshwy', 'wjsnbsvdf'],
