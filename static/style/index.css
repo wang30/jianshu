@@ -2,6 +2,7 @@
 
 .header {
     border-bottom: 1px solid #f0f0f0;
+    position: relative;
 }
 .header-link {
     margin: 0 10px;
@@ -9,6 +10,39 @@
 .header-logo {
     width: 100px;
     vertical-align: top;
+}
+.header-head {
+    width: 38px;
+    border-radius: 50%;
+}
+.header-dropdown {
+    width: 160px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    background: #fff;
+    position: absolute;
+    top: 45px;
+    left: 90px;
+}
+.open {
+    display: block;
+}
+.close {
+    display: none;
+}
+.header-dropdown li {
+    text-align: center;  
+}
+.header-dropdown li:hover {
+    background: #eee;
+}
+.header-dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    line-height: 50px;
 }
 .header-write {
     line-height: 56px;

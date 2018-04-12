@@ -23,8 +23,7 @@ router.use('/', (req, res)=>{
             res.send('注册时插入数据失败' + err)
         }
         else {
-            req.session['admin']='1'
-            
+            res.cookie('email', email, {signed: true})
             res.redirect('/')
         }
     })

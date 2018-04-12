@@ -18,9 +18,10 @@ router.use('/', (req, res) => {                         // 首页
             res.send(err)
         }
         else {
-            ejs.renderFile(__dirname + '/../template/index.ejs', {data: data}, (err, data)=>{
+            ejs.renderFile(__dirname + '/../template/index.ejs', {data: data, cookie: req.signedCookies}, (err, data)=>{
                 if(err) {
-                    res.send('error')
+                    console.log(err)
+                    res.send(err)
                 }
                 else {
                     res.send(data)
