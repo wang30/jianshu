@@ -6,15 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="/static/style/sign_in.css">
+    <script src="/static/lib/jquery.js"></script>
+    <script src="/static/js/sign_in.js"></script>
 </head>
 <body>
     <div class="container">
         <h3 class="header">登录</h3>
-        <form class="signIn" action="1.php" method="post">
+        <form class="signIn" action="/api/sign_in" method="post">
             <input class="signIn-input signIn-first" name="email" type="email" required placeholder="邮箱"><br>
             <input class="signIn-input signIn-last" name="password" required type="password" placeholder="设置密码"><br>
             <input class="signIn-submit" type="submit" value="登录">
         </form>        
     </div>
+    <div class="error-tip"></div>
 </body>
 </html>

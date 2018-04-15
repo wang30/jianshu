@@ -12,6 +12,7 @@ server.use(cookieParser('jfnbcxgshenstywm'))
 
 server.use('/api/save', require('./api/save.js'))
 server.use('/api/sign_up', require('./api/sign_up.js'))
+server.use('/api/sign_in', require('./api/sign_in.js'))
 
 server.use('/p', require('./router/read.js'))
 

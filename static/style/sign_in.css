@@ -43,3 +43,17 @@
 .signIn-submit:focus {
     outline: none;
 }
+.error-tip {
+    border: 1px solid #ec6149;
+    width: 300px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #ec6149;
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}

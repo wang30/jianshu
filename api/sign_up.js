@@ -18,13 +18,31 @@ router.use('/', (req, res)=>{
     
     // 校验
 
-    db.query(`insert into user(name, email, password) values('${name}', '${email}', '${password}')`,(err)=>{
+    db.query(`select * from user where email='${email}'`, (err, data) => {
         if(err) {
-            res.send('注册时插入数据失败' + err)
+            res.send(err)
         }
         else {
-            res.cookie('email', email, {signed: true})
-            res.redirect('/')
+            if(data.length > 0) {
+                res.send({
+                    code: 1,
+                    msg: '该用户已注册'
+                })
+            }
+            else {
+                db.query(`insert into user(name, email, password) values('${name}', '${email}', '${password}')`,(err)=>{
+                    if(err) {
+                        res.send('注册时插入数据失败' + err)
+                    }
+                    else {
+                        res.cookie('email', email, {signed: true})
+                        res.send({
+                            code: 0,
+                            msg: 'ok'
+                        })
+                    }
+                })
+            }
         }
     })
 })

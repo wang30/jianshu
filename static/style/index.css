@@ -1,8 +1,10 @@
 /* * { outline: 1px solid #bed4ff; } */
-
 .header {
     border-bottom: 1px solid #f0f0f0;
     position: relative;
+}
+.header a:hover {
+    text-decoration: none;
 }
 .header-link {
     margin: 0 10px;

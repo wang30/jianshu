@@ -6,15 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <title>Document</title>
+    <link rel="stylesheet" href="/static/style/normalize.css">
     <link rel="stylesheet" href="/static/style/index.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img class="header-logo" src="/static/image/nav-logo.png" alt="">
+            <a href="/">
+                <img class="header-logo" src="/static/image/nav-logo.png" alt="">
+            </a>
 
             <% if(cookie && cookie.email) { %>
-            <img class="header-head" src="/static/image/default-head.jpg" alt="head">
+            <img class="header-head" src="/static/head/default-head.jpg" alt="head">
             <ul class="header-dropdown">
                 <li><a href="/sign_out">退出</a></li>
                 <li><a href="">设置</a></li>

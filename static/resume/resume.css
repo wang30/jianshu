@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 612461 */
+    src: url('http://at.alicdn.com/t/font_612461_86sknc1i42aqncdi.eot');
+    src: url('http://at.alicdn.com/t/font_612461_86sknc1i42aqncdi.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_612461_86sknc1i42aqncdi.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_612461_86sknc1i42aqncdi.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_612461_86sknc1i42aqncdi.svg#iconfont') format('svg');
+}
+body {
+    background: #ccc;
+}
+.container {
+    background: #fff;
+    width: 960px;
+    margin: 0 auto;
+    box-shadow: 4px 3px 18px 0px rgba(0,0,0,0.75);
+    padding: 50px 80px;
+    box-sizing: border-box;   
+}
+.container-wx {
+    width: 100px;
+    float: right;
+}
+.container-content {
+    padding-right: 20px;
+}
+.container-content>a {
+    text-decoration: none;
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-jian {
+    color: #ea6f5a;
+}
+
+.content {
+    margin-top: 50px;
+}
