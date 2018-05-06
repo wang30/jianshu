@@ -25,6 +25,8 @@ server.use('/sign_out', (req, res) => {
     res.redirect('/')
 })
 
+server.use('/settings', require('./router/settings.js'))
+
 server.use('/static', static('./static'))
 
 server.use('/', require('./router/home.js'))

@@ -30,7 +30,8 @@ router.use('/', (req, res)=>{
                 })
             }
             else {
-                db.query(`insert into user(name, email, password) values('${name}', '${email}', '${password}')`,(err)=>{
+                const head_url = '/static/head/default-head.jpg'
+                db.query(`insert into user(name, email, password, head) values('${name}', '${email}', '${password}', '${head_url}')`,(err)=>{
                     if(err) {
                         res.send('注册时插入数据失败' + err)
                     }

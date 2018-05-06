@@ -1,0 +1,7 @@
+* {
+    outline: 1px solid lightgray;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
